@@ -1,0 +1,10 @@
+﻿if ImageFound(Image:"BasicPlay", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","基本の遊び方", true
+else
+	Log "テスト勉強","基本の遊び方", false
+end if
+wait 5
+CaptureScreen (Name: "基本の遊び方")
+wait 5
+//testです
