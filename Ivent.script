@@ -1,0 +1,13 @@
+﻿if ImageFound (Image:"iventbtn", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","イベント", true
+else
+	Log "テスト勉強","イベント", false
+end if
+wait 5
+CaptureScreen (Name: "イベント画面")
+wait 5
+if ImageFound (Image:"homebtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 10

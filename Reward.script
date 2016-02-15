@@ -1,0 +1,19 @@
+﻿if ImageFound(Image:"Reward", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","ご褒美タブ", true
+else
+	Log "テスト勉強","ご褒美タブ", false
+	if ImageFound (Image:"SwipeImage1", WaitFor:10)
+		SwipeDown FoundImageLocation()
+	end if
+	wait 5
+	if ImageFound(Image:"Reward", WaitFor:10)
+		tap FoundImageLocation()
+		Log "テスト勉強","ご褒美タブ", true
+	else
+		Log "テスト勉強","ご褒美タブ", false
+	end if
+end if
+wait 3
+CaptureScreen (Name: "ご褒美タブ")
+wait 5

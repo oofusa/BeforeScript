@@ -1,0 +1,15 @@
+﻿SwipeUp (Image:"test", WaitFor:10)
+
+if ImageFound (Image:"Organization", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","ガールズの編成", true
+else
+	Log "テスト勉強","ガールズの編成", false
+end if
+wait 5
+CaptureScreen (Name: "ガールズの編成画面")
+wait 5
+if ImageFound(Image:"Returnbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 10

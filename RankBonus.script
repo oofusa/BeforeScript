@@ -1,0 +1,12 @@
+﻿SwipeUp "test"
+SwipeUp "HowToPlaySwipe"
+wait 3
+if ImageFound(Image:"Rank", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","お勉強ランク", true
+else
+	Log "テスト勉強","お勉強ランク", false
+end if
+wait 3
+CaptureScreen (Name: "お勉強ランクとボーナス")
+wait 5

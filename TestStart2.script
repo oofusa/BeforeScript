@@ -1,0 +1,23 @@
+﻿SwipeUp "test"
+wait 3
+SwipeUp "HowToPlaySwipe"
+wait 3
+SwipeUp "SwipeImage1"
+wait 3
+SwipeUp "SwipeImage2"
+wait 3
+SwipeUp "SwipeImage4"
+wait 3
+
+if ImageFound (Image:"TestStart", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","テスト勉強しにいく(2回目)", true
+else
+	Log "テスト勉強","テスト勉強しにいく(2回目)", false
+end if
+wait 5
+CaptureScreen (Name: "テスト勉強しにいく(2回目)")
+wait 3
+Tap (Image:"MainMenuOnHeaderBar" , WaitFor:5)
+Tap (Image:"PrepareTest", WaitFor:5)
+wait 5

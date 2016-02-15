@@ -1,0 +1,13 @@
+﻿if ImageFound(Image:"Cupid", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","キューピッド", true
+else
+	Log "テスト勉強","キューピッド", false
+end if
+wait 3
+CaptureScreen (Name: "キューピッド")
+wait 5
+if ImageFound(Image:"Returnbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5

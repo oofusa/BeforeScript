@@ -1,0 +1,22 @@
+﻿if ImageFound (Image:"MainMenu" , WaitFor:10)
+	tap FoundImageLocation()
+else
+	RefreshScreen
+	wait 5
+	if ImageFound (Image:"MainMenu" , WaitFor:10)
+		tap FoundImageLocation()
+	end if
+end if
+wait 5
+
+if ImageFound  (Image:"PrepareTest", WaitFor:10)
+	tap FoundImageLocation()
+else
+	if ImageFound (Image:"MainMenu" , WaitFor:10)
+		tap FoundImageLocation()
+	end if
+	if ImageFound  (Image:"PrepareTest", WaitFor:10)
+		tap FoundImageLocation()
+	end if
+end if
+wait 5

@@ -1,0 +1,63 @@
+﻿run "Login"
+wait 5
+run "PrepareTest"
+
+if ImageFound(Image:"PrepareTestHeader", WaitFor:10)
+	Log "メニュー", "テスト勉強する", true
+else
+	Log "メニュー", "テスト勉強する", false
+end if
+wait 10
+CaptureScreen (Name: "テスト勉強TOP")
+wait 5
+
+run "VoiceOnOff"
+run "Mypage"
+run "PrepareTest"
+run "Ivent"
+run "PrepareTest"
+run "Menu"
+run "HeaderImage"
+run "TestStart"
+run "Organization"
+run "Episode"
+run "RankBonus"
+run "Skill"
+run "BasicPlay"
+run "Reward"
+run "HowToPlay"
+run "Organization2"
+run "Episode2"
+run "Device"
+run "Help"
+run "ReturnTestTOP"
+run "TestStart2"
+run "Mypage2"
+run "PageUp"
+run "GFCoin"
+run "GotoSchool"
+run "Battle"
+run "Cupid"
+run "Yell"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

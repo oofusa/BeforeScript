@@ -1,0 +1,7 @@
+﻿if ImageFound(Image:"PrepareTestHeader", WaitFor:10)
+	Log "メニュー", "テスト勉強する", true
+else
+	Log "メニュー", "テスト勉強する", false
+end if
+wait 10
+CaptureScreen (Name: "テスト勉強TOP")

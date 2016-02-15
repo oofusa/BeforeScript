@@ -1,0 +1,4 @@
+﻿Tap (Image:"MainMenuOnHeaderBar" , WaitFor:5)
+Tap (Image:"PrepareTest", WaitFor:5)
+
+wait 5

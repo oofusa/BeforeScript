@@ -1,0 +1,9 @@
+﻿if ImageFound (Image:"mypagebtn", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","マイページ", true
+else
+	Log "テスト勉強","マイページ", false
+end if
+wait 5
+CaptureScreen (Name: "マイページ")
+wait 5

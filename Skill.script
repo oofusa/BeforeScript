@@ -1,0 +1,8 @@
+﻿if ImageFound(Image:"Skill", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","スキル声援効果", true
+else
+	Log "テスト勉強","スキル声援効果", false
+end if
+CaptureScreen (Name: "スキル声援効果")
+wait 5

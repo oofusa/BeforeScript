@@ -1,0 +1,10 @@
+﻿if ImageFound (Image:"MainMenuOnHeaderBar" , WaitFor:5)
+	tap FoundImageLocation()
+	Log "テスト勉強","メニュー", true
+else
+	Log "テスト勉強","メニュー", false
+end if
+CaptureScreen (Name: "メニュー画面")
+wait 5
+Tap (Image:"Closebtn", WaitFor:5)
+wait 10

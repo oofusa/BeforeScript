@@ -1,0 +1,4 @@
+﻿if ImageFound (Image:"ReturnHowToPlay", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5

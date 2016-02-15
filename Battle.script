@@ -1,0 +1,13 @@
+﻿if ImageFound(Image:"Battle", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","バトル", true
+else
+	Log "テスト勉強","バトル", false
+end if
+wait 3
+CaptureScreen (Name: "バトル")
+wait 5
+if ImageFound(Image:"Returnbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5

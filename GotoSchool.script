@@ -1,0 +1,13 @@
+﻿if ImageFound(Image:"GotoSchool", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","登校", true
+else
+	Log "テスト勉強","登校", false
+end if
+wait 3
+CaptureScreen (Name: "登校")
+wait 5
+if ImageFound(Image:"Returnbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5

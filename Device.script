@@ -1,0 +1,23 @@
+﻿SwipeUp "test"
+wait 3
+SwipeUp "HowToPlaySwipe"
+wait 3
+SwipeUp "SwipeImage1"
+wait 3
+SwipeUp "SwipeImage2"
+wait 3
+
+if ImageFound (Image:"Device", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","推奨端末について", true
+else
+	Log "テスト勉強","推奨端末について", false
+end if
+wait 5
+SwipeUp "SwipeImage3"
+wait 3
+CaptureScreen (Name: "推奨端末について")
+wait 5
+
+Tap (Image:"Device", WaitFor:10)
+wait 5

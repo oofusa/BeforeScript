@@ -1,0 +1,9 @@
+﻿if ImageFound (Image:"Help", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","ヘルプ", true
+else
+	Log "テスト勉強","ヘルプ", false
+end if
+wait 5
+CaptureScreen (Name: "ヘルプ画面")
+wait 5

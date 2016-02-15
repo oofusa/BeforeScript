@@ -1,0 +1,32 @@
+﻿SwipeUp "test"
+wait 3
+SwipeUp
+wait 3
+SwipeUp
+wait 3
+SwipeUp
+wait 3
+
+if ImageFound (Image:"PageUp", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","ページ上部へ", true
+else
+	Log "テスト勉強","ページ上部へ", false
+	if ImageFound (Image:"AGPfooter", WaitFor:10)
+		SwipeDown FoundImageLocation()
+	else
+		if ImageFound (Image:"Episode2", WaitFor:10)
+			SwipeUp FoundImageLocation()
+		end if
+	end if 
+	wait 5
+	if ImageFound (Image:"PageUp", WaitFor:10)
+		tap FoundImageLocation()
+		Log "テスト勉強","ページ上部へ", true
+	else
+		Log "テスト勉強","ページ上部へ", false
+	end if
+End if
+wait 5
+CaptureScreen (Name: "ページ上部")
+wait 5

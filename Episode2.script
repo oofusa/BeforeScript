@@ -1,0 +1,22 @@
+﻿SwipeUp "test"
+wait 3
+SwipeUp "HowToPlaySwipe"
+wait 3
+SwipeUp "SwipeImage1"
+wait 3
+SwipeUp "SwipeImage2"
+wait 3
+
+if ImageFound (Image:"Episode2", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","エピソードを見に行く", true
+else
+	Log "テスト勉強","エピソードを見に行く", false
+end if
+wait 5
+CaptureScreen (Name: "エピソードを見に行く")
+wait 5
+if ImageFound(Image:"Returnbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5

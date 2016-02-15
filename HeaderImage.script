@@ -1,0 +1,11 @@
+﻿CaptureScreen (Name: "ヘッダー画像タップ前")
+wait 5
+if ImageFound(Image:"image0001", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","ヘッダー画像", true
+else
+	Log "テスト勉強","ヘッダー画像", false
+end if
+wait 5
+CaptureScreen (Name: "ヘッダー画像タップ後")
+wait 5

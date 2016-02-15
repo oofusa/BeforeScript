@@ -1,0 +1,19 @@
+﻿if ImageFound(Image:"VoiceON", WaitFor:10)
+	tap FoundImageLocation()
+	Log "VoiceON", true
+	else
+	Log "VoiceON", false
+end if
+wait 3
+CaptureScreen (Name: "ボイスON")
+
+if ImageFound(image:"VoiceOFF", WaitFor:10)
+	tap FoundImageLocation()
+	Log "VoiceOFF", true
+else
+	Log "VoiceOFF", false
+end if
+wait 3
+CaptureScreen (Name: "ボイスOFF")
+
+wait 5

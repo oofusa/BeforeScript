@@ -1,0 +1,64 @@
+﻿Tap "homeicon"
+wait 5
+
+if ImageFound(Image:"Brawser", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5
+if ImageFound (Image:"startbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 3
+if ImageFound (Image:"idpasslogin", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 3
+if ImageFound (Image:"Amebaidloginbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 3
+if ImageFound (Image:"Amebaid", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5
+if ImageFound (Image:"mojibtn", WaitFor:5)
+	tap FoundImageLocation()
+	wait 5
+	TypeText "otameshi-kun8"
+	TypeText CommandKey,Tab
+end if
+wait 3
+if ImageFound (Image:"password", WaitFor:5)
+	tap FoundImageLocation()
+	wait 5
+	TypeText "otameshikun"
+end if
+wait 5
+if ImageFound (Image:"loginbtn", Waitfor:10)
+	tap FoundImageLocation()
+end if
+wait 10
+if ImageFound (Image:"Start", WaitFor:5)
+	tap FoundImageLocation()
+end if
+if ImageFound (Image:"homebtn", WaitFor:5)
+	tap FoundImageLocation()
+	wait 5
+	tap FoundImageLocation()
+	wait 5
+	tap FoundImageLocation()
+	wait 5
+	tap FoundImageLocation()
+end if
+
+if ImageFound(Image:"batubtn", WaitFor:10)
+	tap FoundImageLocation()
+	wait 5
+	tap FoundImageLocation()
+end if
+wait 5
+
+
+
+
+

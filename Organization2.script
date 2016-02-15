@@ -1,0 +1,14 @@
+﻿if ImageFound (Image:"Organization2", WaitFor:10)
+	tap FoundImageLocation()
+	Log "テスト勉強","遊び方","ガールズを編成する", true
+else
+	Log "テスト勉強","遊び方","ガールズを編成する" false
+end if
+wait 3
+CaptureScreen (Name: "ガールズを編成する")
+wait 5
+
+if ImageFound(Image:"Returnbtn", WaitFor:10)
+	tap FoundImageLocation()
+end if
+wait 5
